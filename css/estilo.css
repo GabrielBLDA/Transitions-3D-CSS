@@ -1,0 +1,244 @@
+body{
+	background: #ede0e5;
+}
+
+/*Inicio card HollowKnight*/
+.cardHK{
+	width: 400px; /*Tamanho da carta*/
+}
+
+.card_conteudo{ 
+	text-align: center; /*Alinhar todo o conteudo do card no centro*/
+	padding: 230px 100px; /*Espaçamento geral do conteudo*/
+	position: relative; /*-*/
+	/*background: white;*/  /*Mudar cor do fundo para branco*/
+	color: white; /*Mudar cor da letra para preta*/
+	transition: transform 2s; /*As transições com 'transforms' terão o delay de 3 segundos para execução */
+	transform-style: preserve-3d; /*Preserva os estilos 3d !essencial*/
+	 /*Borda preta*/
+	 border-radius: 20px; /*Arredondar a borda em 20px;*/
+}
+
+.card_frente::before {
+	content: '';
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	left: 1em;
+	right: 1em; 
+	border: 3px solid white;
+	transform: translateZ(6rem);
+	border-radius: 30px;
+}
+
+
+.card_costas::before {
+	content: '';
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	left: 1em;
+	right: 1em; 
+	border: 3px dotted #007bff;
+	transform: translateZ(6rem);
+	border-radius: 30px;
+}
+
+
+.card_frente{
+	background-image: url(../imagens/teste.png);
+	background-position: center;
+	background-size: 390px 750px;
+	border-radius: 20px;
+}
+
+
+.cardHK:hover .card_conteudo{
+	transform: rotateX(0.5turn); /*rotacionar o card para cima assim que passar o mouse por cima do mesmo*/
+}
+
+.card_frente, 
+.card_costas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 3em;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	display: grid;
+	align-content: center;
+}
+
+.card_titulo{
+	margin-top: 1em;
+	font-size: 2.8em;
+	text-transform: uppercase;
+	transform: translateZ(9rem);
+}
+
+.card_subtitulo{
+	transform: translateZ(6rem);
+	font-size: 1em;
+}
+
+.seta{
+	position: relative;
+	margin-top: 30px;
+	left: 0;
+	right: 20%;
+	top: 30px;
+	transform: translateZ(3rem);
+	cursor: pointer;
+
+}
+
+.card_costas {
+	background: white;
+	background-size: 800px 1000px;
+	border-radius: 15px;
+	transform: rotateX(0.5turn);
+	color: black;
+}
+
+.btn-primary {
+    color: white;
+    background-color: white;
+    margin-left: 90px;
+	margin-right: 90px;
+	transform: translateZ(8rem);
+}
+
+i{
+	transform: translateZ(3rem);	
+}
+
+div.card_costas p{
+	transform: translateZ(4rem);
+}
+/*Fim card HollowKnight*/
+
+
+
+/*Inicio card Celeste*/
+
+.cardCeleste{
+	width: 400px; /*Tamanho da carta*/
+}
+
+div#celeste .card_conteudo{ 
+	text-align: center; /*Alinhar todo o conteudo do card no centro*/
+	padding: 230px 100px; /*Espaçamento geral do conteudo*/
+	position: relative; /*-*/
+	/*background: white;*/  /*Mudar cor do fundo para branco*/
+	color: #ec5493; /*Mudar cor da letra para preta*/
+	transition: transform 2s; /*As transições com 'transforms' terão o delay de 3 segundos para execução */
+	transform-style: preserve-3d; /*Preserva os estilos 3d !essencial*/
+	 /*Borda preta*/
+	 border-radius: 20px; /*Arredondar a borda em 20px;*/
+}
+
+.card_frente::before {
+	content: '';
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	left: 1em;
+	right: 1em; 
+	border: 3px solid white;
+	transform: translateZ(6rem);
+	border-radius: 30px;
+}
+
+
+div#celeste .card_costas::before {
+	content: '';
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	left: 1em;
+	right: 1em; 
+	border: 3px dotted #ec5493;
+	transform: translateZ(6rem);
+	border-radius: 30px;
+}
+
+
+div#celeste .card_frente{
+	background-image: url(../imagens/teste2.png);
+	background-position: center;
+	background-size: 650px 460px;
+	border-radius: 20px;
+}
+
+
+.cardCeleste:hover .card_conteudo{
+	transform: rotateY(0.5turn); /*rotacionar o card para cima assim que passar o mouse por cima do mesmo*/
+}
+
+.card_frente, 
+.card_costas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 3em;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	display: grid;
+	align-content: center;
+}
+
+.card_titulo{
+	margin-top: 1em;
+	font-size: 2.8em;
+	text-transform: uppercase;
+	transform: translateZ(9rem);
+}
+
+.card_subtitulo{
+	transform: translateZ(6rem);
+	font-size: 1em;
+}
+
+.seta{
+	position: relative;
+	margin-top: 30px;
+	left: 0;
+	right: 20%;
+	top: 30px;
+	transform: translateZ(10rem);
+	cursor: pointer;
+}
+
+div#celeste .card_costas {
+	background: white;
+	background-size: 800px 1000px;
+	border-radius: 15px;
+	transform: rotateY(0.5turn);
+	color: black;
+}
+
+div#celeste .btn-primary {
+    color: white;
+    background-color: white;
+    border: 1px solid #ec5493;
+    margin-left: 90px;
+	margin-right: 90px;
+	transform: translateZ(8rem);
+}
+
+div#celeste a {
+   color: #ec5493;
+   text-decoration: none;
+}
+
+i{
+	transform: translateZ(3rem);	
+}
+
+div.card_costas p{
+	transform: translateZ(4rem);
+}
